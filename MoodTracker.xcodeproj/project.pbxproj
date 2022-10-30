@@ -56,15 +56,39 @@
 		8E9BD5EA290F274B006E2266 /* MoodTracker */ = {
 			isa = PBXGroup;
 			children = (
-				8E9BD5EB290F274B006E2266 /* AppDelegate.swift */,
-				8E9BD5ED290F274B006E2266 /* SceneDelegate.swift */,
-				8E9BD5EF290F274B006E2266 /* ViewController.swift */,
-				8E9BD5F1290F274B006E2266 /* Main.storyboard */,
+				E4DC192F290F2A9E007FF662 /* ViewControllers */,
+				E4DC192E290F2A7E007FF662 /* Storyboards */,
+				E4DC192D290F2A63007FF662 /* App */,
 				8E9BD5F4290F274B006E2266 /* Assets.xcassets */,
-				8E9BD5F6290F274B006E2266 /* LaunchScreen.storyboard */,
-				8E9BD5F9290F274B006E2266 /* Info.plist */,
 			);
 			path = MoodTracker;
+			sourceTree = "<group>";
+		};
+		E4DC192D290F2A63007FF662 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8E9BD5EB290F274B006E2266 /* AppDelegate.swift */,
+				8E9BD5ED290F274B006E2266 /* SceneDelegate.swift */,
+				8E9BD5F9290F274B006E2266 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E4DC192E290F2A7E007FF662 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8E9BD5F1290F274B006E2266 /* Main.storyboard */,
+				8E9BD5F6290F274B006E2266 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E4DC192F290F2A9E007FF662 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8E9BD5EF290F274B006E2266 /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,12 +313,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q7H84WAXJV;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MoodTracker/Info.plist;
+				INFOPLIST_FILE = MoodTracker/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +326,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = hiirari.MoodTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,12 +344,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q7H84WAXJV;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MoodTracker/Info.plist;
+				INFOPLIST_FILE = MoodTracker/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +357,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = hiirari.MoodTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
