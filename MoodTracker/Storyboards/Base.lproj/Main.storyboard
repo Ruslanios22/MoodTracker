@@ -124,6 +124,9 @@
                                 <state key="normal" title="начать">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="jRG-Ov-uZ3" kind="presentation" modalPresentationStyle="fullScreen" id="7YF-ju-F0e"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -156,6 +159,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="39" y="-2"/>
+        </scene>
+        <!--SetMoodViewController-->
+        <scene sceneID="5HV-hL-4hj">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SetMoodStoryboard" referencedIdentifier="SetMoodViewController" id="jRG-Ov-uZ3" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sen-KI-SnM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="711" y="-2"/>
         </scene>
     </scenes>
     <resources>
