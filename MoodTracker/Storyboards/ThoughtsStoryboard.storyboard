@@ -165,6 +165,9 @@
                     <navigationItem key="navigationItem" title="Мысли" id="8Mw-Kj-fDy">
                         <barButtonItem key="rightBarButtonItem" title="Готово" style="done" id="BgP-PN-1mf">
                             <color key="tintColor" systemColor="opaqueSeparatorColor"/>
+                            <connections>
+                                <segue destination="GOL-80-2Q9" kind="presentation" modalPresentationStyle="fullScreen" id="zfB-Ms-woK"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -181,6 +184,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10N-c1-Pjl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="912.2137404580152" y="54.225352112676056"/>
+        </scene>
+        <!--ResultTableViewController-->
+        <scene sceneID="ENJ-jS-2FQ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ResultStoryboard" referencedIdentifier="ResultTableViewController" id="GOL-80-2Q9" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nro-kc-9NE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1546" y="54"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="PBE-il-Ho5">
