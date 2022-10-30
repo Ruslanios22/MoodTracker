@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wd2-dn-gHO">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Мысли-->
+        <scene sceneID="zO2-2w-5Kg">
+            <objects>
+                <viewController id="tJO-5I-9dS" customClass="ThoughtsViewController" customModule="MoodTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yaj-GL-kMX">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Xja-AI-V1T">
+                                <rect key="frame" x="16" y="103" width="361" height="513.66666666666663"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="br5-mZ-GLv">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="164.66666666666666"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Утро" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nhU-dz-AzG">
+                                                <rect key="frame" x="0.0" y="0.0" width="361" height="28"/>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="FQK-lw-Mzp">
+                                                <rect key="frame" x="0.0" y="28.000000000000007" width="361" height="124.66666666666669"/>
+                                                <subviews>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Ваши размышления..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Zer-OJ-4kZ">
+                                                        <rect key="frame" x="0.0" y="7.3333333333333428" width="304" height="110"/>
+                                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="110" id="cA0-0P-PSV"/>
+                                                        </constraints>
+                                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="F7d-Ad-nmP">
+                                                        <rect key="frame" x="312" y="46.666666666666657" width="51" height="31"/>
+                                                        <color key="onTintColor" systemColor="systemRedColor"/>
+                                                    </switch>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Поставьте отметку, если мысль имеет негативный оттенок" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j6u-04-c0O">
+                                                <rect key="frame" x="0.0" y="152.66666666666666" width="361" height="12"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Zer-OJ-4kZ" firstAttribute="width" relation="lessThanOrEqual" secondItem="br5-mZ-GLv" secondAttribute="height" multiplier="231:125" id="11q-UM-U1g"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xFC-po-tUO">
+                                        <rect key="frame" x="0.0" y="174.66666666666669" width="361" height="164.33333333333331"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="День" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYn-5Z-03A">
+                                                <rect key="frame" x="0.0" y="0.0" width="361" height="28"/>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="VfB-1J-g1k">
+                                                <rect key="frame" x="0.0" y="27.999999999999993" width="361" height="124.33333333333331"/>
+                                                <subviews>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Ваши размышления..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kod-9o-EOe">
+                                                        <rect key="frame" x="0.0" y="7" width="304" height="110"/>
+                                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="110" id="eFb-EX-1ac"/>
+                                                        </constraints>
+                                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6bk-Ns-IjL">
+                                                        <rect key="frame" x="312" y="46.666666666666629" width="51" height="31"/>
+                                                        <color key="onTintColor" systemColor="systemRedColor"/>
+                                                    </switch>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Поставьте отметку, если мысль имеет негативный оттенок" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YqR-iu-wME">
+                                                <rect key="frame" x="0.0" y="152.33333333333331" width="361" height="12"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="kod-9o-EOe" firstAttribute="width" relation="lessThanOrEqual" secondItem="xFC-po-tUO" secondAttribute="height" multiplier="231:125" id="1iU-Fr-fxJ"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lTU-HW-Csg">
+                                        <rect key="frame" x="0.0" y="349" width="361" height="164.66666666666663"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Вечер" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L33-RA-CNz">
+                                                <rect key="frame" x="0.0" y="0.0" width="361" height="28"/>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cpK-ZU-DC4">
+                                                <rect key="frame" x="0.0" y="28.000000000000007" width="361" height="124.66666666666669"/>
+                                                <subviews>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Ваши размышления..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hsc-Kr-xUO">
+                                                        <rect key="frame" x="0.0" y="7.3333333333333144" width="304" height="110"/>
+                                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="110" id="mL6-zK-wTp"/>
+                                                        </constraints>
+                                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nul-kV-lEH">
+                                                        <rect key="frame" x="312" y="46.666666666666629" width="51" height="31"/>
+                                                        <color key="onTintColor" systemColor="systemRedColor"/>
+                                                    </switch>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Поставьте отметку, если мысль имеет негативный оттенок" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Onm-tG-odv">
+                                                <rect key="frame" x="0.0" y="152.66666666666663" width="361" height="12"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="hsc-Kr-xUO" firstAttribute="width" relation="lessThanOrEqual" secondItem="lTU-HW-Csg" secondAttribute="height" multiplier="231:125" id="Lgk-ge-EO1"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="guJ-5P-uua">
+                                <rect key="frame" x="121.66666666666669" y="636.66666666666663" width="150" height="34.333333333333371"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="mWg-0w-QO9"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Сохранить"/>
+                                <connections>
+                                    <action selector="saveButtonPressed" destination="tJO-5I-9dS" eventType="touchUpInside" id="7m8-fe-o24"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4dz-c5-8ub"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Xja-AI-V1T" firstAttribute="top" secondItem="4dz-c5-8ub" secondAttribute="top" id="Ngw-9A-rYy"/>
+                            <constraint firstItem="guJ-5P-uua" firstAttribute="centerX" secondItem="4dz-c5-8ub" secondAttribute="centerX" id="bRq-X4-Na0"/>
+                            <constraint firstItem="guJ-5P-uua" firstAttribute="top" secondItem="Xja-AI-V1T" secondAttribute="bottom" constant="20" id="hcQ-Lf-SSE"/>
+                            <constraint firstItem="4dz-c5-8ub" firstAttribute="trailing" secondItem="Xja-AI-V1T" secondAttribute="trailing" constant="16" id="oSm-ad-9VJ"/>
+                            <constraint firstItem="Xja-AI-V1T" firstAttribute="leading" secondItem="4dz-c5-8ub" secondAttribute="leading" constant="16" id="xjY-nx-O0Z"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Мысли" id="8Mw-Kj-fDy">
+                        <barButtonItem key="rightBarButtonItem" title="Готово" style="done" id="BgP-PN-1mf">
+                            <color key="tintColor" systemColor="opaqueSeparatorColor"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="doneButton" destination="BgP-PN-1mf" id="rta-It-3jx"/>
+                        <outlet property="saveButton" destination="guJ-5P-uua" id="Vpb-8Y-fEf"/>
+                        <outletCollection property="reflectionTextViews" destination="Zer-OJ-4kZ" collectionClass="NSMutableArray" id="u7c-3k-ubX"/>
+                        <outletCollection property="reflectionTextViews" destination="kod-9o-EOe" collectionClass="NSMutableArray" id="uVr-Yu-iMW"/>
+                        <outletCollection property="reflectionTextViews" destination="hsc-Kr-xUO" collectionClass="NSMutableArray" id="BGL-o0-ZQ5"/>
+                        <outletCollection property="moodSwitches" destination="F7d-Ad-nmP" collectionClass="NSMutableArray" id="nky-D0-LUj"/>
+                        <outletCollection property="moodSwitches" destination="6bk-Ns-IjL" collectionClass="NSMutableArray" id="gtb-WI-ekc"/>
+                        <outletCollection property="moodSwitches" destination="nul-kV-lEH" collectionClass="NSMutableArray" id="efe-YZ-UTq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="10N-c1-Pjl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="912.2137404580152" y="54.225352112676056"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="PBE-il-Ho5">
+            <objects>
+                <navigationController storyboardIdentifier="ThoughtsViewController" automaticallyAdjustsScrollViewInsets="NO" id="wd2-dn-gHO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7UH-EP-PHD">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="40"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tJO-5I-9dS" kind="relationship" relationship="rootViewController" id="4M1-Jd-EGT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OHK-V1-w1f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-80" y="55.45023696682464"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
