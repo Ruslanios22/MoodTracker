@@ -108,11 +108,20 @@
                         <outlet property="moodSaveButton" destination="VWZ-mo-JnX" id="vFs-r7-HFe"/>
                         <outlet property="moodSlider" destination="Hlq-OT-dlS" id="keu-Wi-Ih5"/>
                         <outlet property="moodsProgressView" destination="c6k-Vm-vIN" id="cAd-oS-3k5"/>
+                        <segue destination="wUG-ET-veD" kind="presentation" identifier="moodSaved" modalPresentationStyle="fullScreen" id="LBs-pY-umU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w8o-Rk-YSW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="583.96946564885491" y="23.239436619718312"/>
+        </scene>
+        <!--ThoughtsViewController-->
+        <scene sceneID="zCC-08-Xos">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ThoughtsStoryboard" referencedIdentifier="ThoughtsViewController" id="wUG-ET-veD" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8aW-Mi-AKV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1240" y="23"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qrP-CE-Wun">

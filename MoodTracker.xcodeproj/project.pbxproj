@@ -17,6 +17,8 @@
 		E4DC193B290F3622007FF662 /* DayInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DC193A290F3622007FF662 /* DayInfo.swift */; };
 		E4DC193D290F362B007FF662 /* SetMoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DC193C290F362A007FF662 /* SetMoodViewController.swift */; };
 		E4DC193F290F3631007FF662 /* SetMoodStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4DC193E290F3631007FF662 /* SetMoodStoryboard.storyboard */; };
+		E4DC1941290F3EB9007FF662 /* ThoughtsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DC1940290F3EB9007FF662 /* ThoughtsViewController.swift */; };
+		E4DC1943290F3EC2007FF662 /* ThoughtsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4DC1942290F3EC2007FF662 /* ThoughtsStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		E4DC193A290F3622007FF662 /* DayInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayInfo.swift; sourceTree = "<group>"; };
 		E4DC193C290F362A007FF662 /* SetMoodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetMoodViewController.swift; sourceTree = "<group>"; };
 		E4DC193E290F3631007FF662 /* SetMoodStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SetMoodStoryboard.storyboard; sourceTree = "<group>"; };
+		E4DC1940290F3EB9007FF662 /* ThoughtsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThoughtsViewController.swift; sourceTree = "<group>"; };
+		E4DC1942290F3EC2007FF662 /* ThoughtsStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ThoughtsStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,7 @@
 				8E9BD5F6290F274B006E2266 /* LaunchScreen.storyboard */,
 				8E9BD5F1290F274B006E2266 /* Main.storyboard */,
 				E4DC193E290F3631007FF662 /* SetMoodStoryboard.storyboard */,
+				E4DC1942290F3EC2007FF662 /* ThoughtsStoryboard.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -99,6 +104,7 @@
 			children = (
 				E4DC1930290F2C14007FF662 /* MeetTeamViewController.swift */,
 				E4DC193C290F362A007FF662 /* SetMoodViewController.swift */,
+				E4DC1940290F3EB9007FF662 /* ThoughtsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -178,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E9BD5F8290F274B006E2266 /* LaunchScreen.storyboard in Resources */,
+				E4DC1943290F3EC2007FF662 /* ThoughtsStoryboard.storyboard in Resources */,
 				8E9BD5F5290F274B006E2266 /* Assets.xcassets in Resources */,
 				8E9BD5F3290F274B006E2266 /* Main.storyboard in Resources */,
 				E4DC193F290F3631007FF662 /* SetMoodStoryboard.storyboard in Resources */,
@@ -194,6 +201,7 @@
 				E4DC1931290F2C14007FF662 /* MeetTeamViewController.swift in Sources */,
 				E4DC1938290F3617007FF662 /* DataStore.swift in Sources */,
 				E4DC193D290F362B007FF662 /* SetMoodViewController.swift in Sources */,
+				E4DC1941290F3EB9007FF662 /* ThoughtsViewController.swift in Sources */,
 				8E9BD5EC290F274B006E2266 /* AppDelegate.swift in Sources */,
 				E4DC193B290F3622007FF662 /* DayInfo.swift in Sources */,
 				8E9BD5EE290F274B006E2266 /* SceneDelegate.swift in Sources */,
