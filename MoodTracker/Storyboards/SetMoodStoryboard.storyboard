@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o1f-vy-73d">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Set Mood View-->
+        <scene sceneID="fOe-eO-9XQ">
+            <objects>
+                <viewController id="rik-uG-EhU" userLabel="Set Mood View" customClass="SetMoodViewController" customModule="MoodTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rRm-hs-NLN">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="c6k-Vm-vIN">
+                                <rect key="frame" x="0.0" y="103" width="393" height="4"/>
+                            </progressView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="morning" translatesAutoresizingMaskIntoConstraints="NO" id="h9i-wG-Xtp">
+                                <rect key="frame" x="16" y="148.33333333333337" width="361" height="251"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="h9i-wG-Xtp" secondAttribute="height" multiplier="1:1" constant="110" id="v10-dp-eiN"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="3qE-Oc-5xi">
+                                <rect key="frame" x="16" y="429.33333333333331" width="361" height="252.33333333333331"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😐" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSO-ef-js5">
+                                        <rect key="frame" x="145.66666666666666" y="0.0" width="70" height="77.666666666666671"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="65"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Нейтральный" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3mh-DY-zsN">
+                                        <rect key="frame" x="126.33333333333334" y="107.66666666666669" width="108.33333333333334" height="20.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="4" minValue="0.0" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="Hlq-OT-dlS">
+                                        <rect key="frame" x="-2" y="158.00000000000006" width="365" height="31"/>
+                                        <connections>
+                                            <action selector="sliderValueChanged" destination="rik-uG-EhU" eventType="valueChanged" id="CFg-dI-1Je"/>
+                                        </connections>
+                                    </slider>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWZ-mo-JnX">
+                                        <rect key="frame" x="120.66666666666666" y="218.00000000000006" width="120" height="34.333333333333343"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="hAy-nZ-jHb"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Сохранить"/>
+                                        <connections>
+                                            <action selector="moodSaveButtonTapped" destination="rik-uG-EhU" eventType="touchUpInside" id="5rY-W0-rz8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Hlq-OT-dlS" firstAttribute="leading" secondItem="3qE-Oc-5xi" secondAttribute="leading" id="5fn-k3-83w"/>
+                                    <constraint firstAttribute="trailing" secondItem="Hlq-OT-dlS" secondAttribute="trailing" id="V8N-t5-4yZ"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="pGJ-pn-3WX">
+                                <rect key="frame" x="16" y="113" width="361" height="20.333333333333343"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Утро" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWj-Tz-qKD">
+                                        <rect key="frame" x="0.0" y="0.0" width="167" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J7x-Tz-PuO">
+                                        <rect key="frame" x="194" y="0.0" width="167" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qLM-kq-adH"/>
+                        <color key="backgroundColor" systemColor="systemGray4Color"/>
+                        <constraints>
+                            <constraint firstItem="h9i-wG-Xtp" firstAttribute="leading" secondItem="qLM-kq-adH" secondAttribute="leading" constant="16" id="66q-rA-qtM"/>
+                            <constraint firstItem="3qE-Oc-5xi" firstAttribute="top" secondItem="h9i-wG-Xtp" secondAttribute="bottom" constant="30" id="ChO-2y-id8"/>
+                            <constraint firstItem="qLM-kq-adH" firstAttribute="trailing" secondItem="h9i-wG-Xtp" secondAttribute="trailing" constant="16" id="IPQ-BD-Ufx"/>
+                            <constraint firstItem="c6k-Vm-vIN" firstAttribute="top" secondItem="qLM-kq-adH" secondAttribute="top" id="Omh-t0-uoi"/>
+                            <constraint firstItem="c6k-Vm-vIN" firstAttribute="leading" secondItem="qLM-kq-adH" secondAttribute="leading" id="mRB-WN-bF6"/>
+                            <constraint firstItem="pGJ-pn-3WX" firstAttribute="top" secondItem="qLM-kq-adH" secondAttribute="top" constant="10" id="nER-vh-Qzw"/>
+                            <constraint firstItem="3qE-Oc-5xi" firstAttribute="leading" secondItem="rRm-hs-NLN" secondAttribute="leading" constant="16" id="p5d-nu-7pQ"/>
+                            <constraint firstItem="h9i-wG-Xtp" firstAttribute="top" secondItem="pGJ-pn-3WX" secondAttribute="bottom" constant="15" id="uSg-BT-hy1"/>
+                            <constraint firstItem="qLM-kq-adH" firstAttribute="trailing" secondItem="pGJ-pn-3WX" secondAttribute="trailing" constant="16" id="wPY-e3-zuW"/>
+                            <constraint firstItem="qLM-kq-adH" firstAttribute="trailing" secondItem="c6k-Vm-vIN" secondAttribute="trailing" id="wl1-sU-mfo"/>
+                            <constraint firstItem="qLM-kq-adH" firstAttribute="trailing" secondItem="3qE-Oc-5xi" secondAttribute="trailing" constant="16" id="ybd-yr-Gxh"/>
+                            <constraint firstItem="pGJ-pn-3WX" firstAttribute="leading" secondItem="qLM-kq-adH" secondAttribute="leading" constant="16" id="zCd-PL-bYI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Какое у вас настроение?" id="C40-Fu-mbo"/>
+                    <connections>
+                        <outlet property="dateLB" destination="J7x-Tz-PuO" id="Dsz-0i-C8W"/>
+                        <outlet property="daytimeImage" destination="h9i-wG-Xtp" id="WJz-PK-bEk"/>
+                        <outlet property="daytimeLB" destination="pWj-Tz-qKD" id="war-Kr-2d8"/>
+                        <outlet property="moodImage" destination="LSO-ef-js5" id="RJV-eh-055"/>
+                        <outlet property="moodLabel" destination="3mh-DY-zsN" id="7Ie-75-6hc"/>
+                        <outlet property="moodSaveButton" destination="VWZ-mo-JnX" id="vFs-r7-HFe"/>
+                        <outlet property="moodSlider" destination="Hlq-OT-dlS" id="keu-Wi-Ih5"/>
+                        <outlet property="moodsProgressView" destination="c6k-Vm-vIN" id="cAd-oS-3k5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w8o-Rk-YSW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="583.96946564885491" y="23.239436619718312"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qrP-CE-Wun">
+            <objects>
+                <navigationController storyboardIdentifier="SetMoodViewController" id="o1f-vy-73d" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cdS-eB-Hkr">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="30"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="rik-uG-EhU" kind="relationship" relationship="rootViewController" id="NvF-wO-Kl3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VwD-V7-qyY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-253" y="23"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="morning" width="512" height="512"/>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
