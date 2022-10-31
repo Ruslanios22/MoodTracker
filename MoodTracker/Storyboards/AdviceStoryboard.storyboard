@@ -38,7 +38,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="JMz-Ou-UZB">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="SxB-44-G2e">
+                        <barButtonItem key="leftBarButtonItem" title="Назад" id="SxB-44-G2e">
                             <connections>
                                 <action selector="cancelButtonDidTapped" destination="mx8-cd-cgO" id="acK-24-zlQ"/>
                             </connections>
@@ -107,7 +107,7 @@
                     <tabBarItem key="tabBarItem" title="Advices" image="tabBarItem:eEw-dl-81q:image" id="eEw-dl-81q"/>
                     <navigationItem key="navigationItem" id="iy7-vd-jYK">
                         <barButtonItem key="backBarButtonItem" title="Back" id="1Jn-2C-B0r"/>
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="PC6-Y7-BZF">
+                        <barButtonItem key="leftBarButtonItem" title="Назад" id="PC6-Y7-BZF">
                             <connections>
                                 <action selector="cancelButtonDidTapped" destination="6Ms-M3-F6i" id="V85-E3-mDQ"/>
                             </connections>
@@ -160,7 +160,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="RcG-mW-pfO">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="1RW-yD-QyS">
+                        <barButtonItem key="leftBarButtonItem" title="Назад" id="1RW-yD-QyS">
                             <connections>
                                 <action selector="cancelButtonDidTapped" destination="Ofh-7w-CVh" id="7ni-T5-kr0"/>
                             </connections>
