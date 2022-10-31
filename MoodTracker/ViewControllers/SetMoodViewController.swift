@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  MoodTracker
 //
-//  Created by hiirari on 25.10.2022.
+//  Created by Roman Golubinko on 25.10.2022.
 //
 
 import UIKit
