@@ -33,11 +33,11 @@
                                                 <subviews>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Ваши размышления..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Zer-OJ-4kZ">
                                                         <rect key="frame" x="0.0" y="7.3333333333333428" width="304" height="110"/>
-                                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="110" id="cA0-0P-PSV"/>
                                                         </constraints>
-                                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                                        <color key="textColor" systemColor="opaqueSeparatorColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     </textView>
@@ -72,11 +72,11 @@
                                                 <subviews>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Ваши размышления..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kod-9o-EOe">
                                                         <rect key="frame" x="0.0" y="7" width="304" height="110"/>
-                                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="110" id="eFb-EX-1ac"/>
                                                         </constraints>
-                                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                                        <color key="textColor" systemColor="opaqueSeparatorColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     </textView>
@@ -111,11 +111,11 @@
                                                 <subviews>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Ваши размышления..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hsc-Kr-xUO">
                                                         <rect key="frame" x="0.0" y="7.3333333333333144" width="304" height="110"/>
-                                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="110" id="mL6-zK-wTp"/>
                                                         </constraints>
-                                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                                        <color key="textColor" systemColor="opaqueSeparatorColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     </textView>
@@ -153,7 +153,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4dz-c5-8ub"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray4Color"/>
                         <constraints>
                             <constraint firstItem="Xja-AI-V1T" firstAttribute="top" secondItem="4dz-c5-8ub" secondAttribute="top" id="Ngw-9A-rYy"/>
                             <constraint firstItem="guJ-5P-uua" firstAttribute="centerX" secondItem="4dz-c5-8ub" secondAttribute="centerX" id="bRq-X4-Na0"/>
@@ -166,7 +166,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Готово" style="done" id="BgP-PN-1mf">
                             <color key="tintColor" systemColor="opaqueSeparatorColor"/>
                             <connections>
-                                <segue destination="f4Z-eO-aEr" kind="presentation" modalPresentationStyle="fullScreen" id="SF1-iC-BMO"/>
+                                <segue destination="LTh-So-ogI" kind="presentation" modalPresentationStyle="fullScreen" id="EKH-OC-IBE"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -186,12 +186,12 @@
             <point key="canvasLocation" x="912.2137404580152" y="54.225352112676056"/>
         </scene>
         <!--ResultTabBarController-->
-        <scene sceneID="saD-gx-qqy">
+        <scene sceneID="9Pt-aA-pY8">
             <objects>
-                <viewControllerPlaceholder storyboardName="ResultStoryboard" referencedIdentifier="ResultTabBarController" id="f4Z-eO-aEr" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eKH-Gj-5fx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="ResultStoryboard" referencedIdentifier="ResultTabBarController" id="LTh-So-ogI" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8MZ-qW-tXH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1596" y="54"/>
+            <point key="canvasLocation" x="1599" y="54"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="PBE-il-Ho5">
@@ -221,6 +221,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

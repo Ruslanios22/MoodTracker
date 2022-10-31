@@ -25,7 +25,7 @@
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hPT-y7-1SO"/>
-                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemGray4Color"/>
                         <constraints>
                             <constraint firstItem="zW6-IS-HXX" firstAttribute="height" secondItem="yNf-e3-zxn" secondAttribute="height" multiplier="0.174171" id="HxT-Rm-epM"/>
                             <constraint firstItem="Zro-hm-IYp" firstAttribute="top" secondItem="zW6-IS-HXX" secondAttribute="bottom" constant="15" id="KPe-Lw-oFM"/>
@@ -59,7 +59,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="85" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="MUz-8v-mqU">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray4Color"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="advice" id="YqM-rO-S7H" customClass="CustomTableViewCell" customModule="MoodTracker" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="50" width="393" height="85"/>
@@ -91,6 +91,7 @@
                                         <constraint firstItem="PGE-Z3-8G1" firstAttribute="leading" secondItem="UKL-MJ-qQp" secondAttribute="leading" constant="15" id="w7A-IQ-ttk"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
                                 <connections>
                                     <outlet property="imageOfAdvice" destination="PGE-Z3-8G1" id="aQY-D5-kKW"/>
                                     <outlet property="nameLabel" destination="vps-68-4Od" id="Sn7-6w-l4w"/>
@@ -125,6 +126,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="sectionIndexBackgroundColor" systemColor="systemGray4Color"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="humor" rowHeight="350" id="RRu-wh-u3x" customClass="CustomTableViewCell" customModule="MoodTracker" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="50" width="393" height="350"/>
@@ -146,6 +148,7 @@
                                         <constraint firstItem="4Fg-68-5x2" firstAttribute="leading" secondItem="igq-tI-8ml" secondAttribute="leading" constant="16" id="ibe-bl-1Ai"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
                                 <connections>
                                     <outlet property="humorImage" destination="4Fg-68-5x2" id="80E-Gg-ieN"/>
                                 </connections>
@@ -204,7 +207,7 @@
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KdL-Pk-H0C"/>
-                        <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemGray4Color"/>
                         <constraints>
                             <constraint firstItem="CBH-LM-XxS" firstAttribute="leading" secondItem="KdL-Pk-H0C" secondAttribute="leading" constant="16" id="L3Y-eP-iDs"/>
                             <constraint firstItem="CBH-LM-XxS" firstAttribute="centerY" secondItem="gUS-Yh-kPm" secondAttribute="centerY" constant="-60" id="SxJ-u2-328"/>
@@ -307,7 +310,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nu7-Mv-2tM"/>
-                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemGray4Color"/>
                         <constraints>
                             <constraint firstItem="a2s-P8-zwT" firstAttribute="centerY" secondItem="WpG-Bb-GiE" secondAttribute="centerY" id="JgG-SX-dum"/>
                             <constraint firstItem="rux-97-0Kw" firstAttribute="top" secondItem="a2s-P8-zwT" secondAttribute="bottom" constant="-9" id="Lim-xG-fRo"/>
@@ -17325,11 +17328,11 @@ AAAAAAAAAA+Blg
 </mutableData>
         </image>
         <image name="usefullTips 1" width="900" height="900"/>
-        <systemColor name="secondarySystemBackgroundColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

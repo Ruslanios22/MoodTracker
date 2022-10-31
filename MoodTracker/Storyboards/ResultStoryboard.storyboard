@@ -9,23 +9,23 @@
     </dependencies>
     <scenes>
         <!--CategoryViewController-->
-        <scene sceneID="9cZ-gm-P4L">
+        <scene sceneID="4bi-s5-Lmx">
             <objects>
-                <viewControllerPlaceholder storyboardName="AdviceStoryboard" referencedIdentifier="CategoryViewController" id="53V-vO-cGW" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="cPa-FB-0sP"/>
+                <viewControllerPlaceholder storyboardName="AdviceStoryboard" referencedIdentifier="CategoryViewController" id="nuJ-qD-D5Q" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Q6d-bZ-ZF6"/>
                 </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oBP-vN-eX1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oo2-wO-Txd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1423" y="-611"/>
+            <point key="canvasLocation" x="1559" y="-599"/>
         </scene>
-        <!--Отмеченые дни-->
+        <!--Результаты-->
         <scene sceneID="fzp-DZ-C8p">
             <objects>
                 <tableViewController storyboardIdentifier="ResultTableViewController" id="tyQ-SR-Pwb" customClass="ResultTableViewController" customModule="MoodTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="sSW-3h-VIW">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray4Color"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="allResult" textLabel="2bs-CP-aTt" detailTextLabel="WZ1-NN-pEF" style="IBUITableViewCellStyleValue1" id="xh8-lS-5b9">
                                 <rect key="frame" x="0.0" y="50" width="430" height="43.666667938232422"/>
@@ -50,6 +50,7 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
                                 <connections>
                                     <segue destination="VGo-gU-UPJ" kind="show" id="suE-i2-uRU"/>
                                 </connections>
@@ -61,14 +62,14 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Результаты" image="pencil.circle" catalog="system" id="i61-88-0sW"/>
-                    <navigationItem key="navigationItem" title="Отмеченые дни" id="oJA-XE-625"/>
+                    <navigationItem key="navigationItem" id="oJA-XE-625"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cM0-52-una" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1745.5813953488373" y="-189.27038626609442"/>
         </scene>
-        <!--Итоги дня-->
+        <!--Detailed Result View Controller-->
         <scene sceneID="etr-LN-PX3">
             <objects>
                 <viewController id="VGo-gU-UPJ" customClass="DetailedResultViewController" customModule="MoodTracker" customModuleProvider="target" sceneMemberID="viewController">
@@ -77,19 +78,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="-50" translatesAutoresizingMaskIntoConstraints="NO" id="ahD-sb-CUz">
-                                <rect key="frame" x="20" y="112" width="390" height="717"/>
+                                <rect key="frame" x="20" y="60" width="390" height="769"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yWV-fl-yfa">
-                                        <rect key="frame" x="0.0" y="0.0" width="126.66666666666667" height="161.33333333333334"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="126.66666666666667" height="170"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Утро" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G7d-EM-ZqG">
-                                                <rect key="frame" x="0.0" y="0.0" width="74.666666666666671" height="161.33333333333334"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="74.666666666666671" height="170"/>
                                                 <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="32"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😍" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ScQ-l0-lgy">
-                                                <rect key="frame" x="82.666666666666671" y="0.0" width="44" height="161.33333333333334"/>
+                                                <rect key="frame" x="82.666666666666671" y="0.0" width="44" height="170"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="39"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -97,7 +98,7 @@
                                         </subviews>
                                     </stackView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RHX-og-EBb">
-                                        <rect key="frame" x="0.0" y="111.33333333333334" width="390" height="161.00000000000003"/>
+                                        <rect key="frame" x="0.0" y="119.99999999999999" width="390" height="169.66666666666663"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex </string>
                                         <color key="textColor" systemColor="labelColor"/>
@@ -105,16 +106,16 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="n06-Pf-ZRo">
-                                        <rect key="frame" x="0.0" y="222.33333333333331" width="116.33333333333333" height="161.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="239.66666666666669" width="116.33333333333333" height="170"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="День" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S3G-6b-wrG">
-                                                <rect key="frame" x="0.0" y="0.0" width="64.333333333333329" height="161.33333333333334"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="64.333333333333329" height="170"/>
                                                 <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="32"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😍" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wu4-lp-rG4">
-                                                <rect key="frame" x="72.333333333333329" y="0.0" width="44" height="161.33333333333334"/>
+                                                <rect key="frame" x="72.333333333333329" y="0.0" width="44" height="170"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="39"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -122,7 +123,7 @@
                                         </subviews>
                                     </stackView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFu-65-dba">
-                                        <rect key="frame" x="0.0" y="333.66666666666669" width="390" height="161"/>
+                                        <rect key="frame" x="0.0" y="359.66666666666669" width="390" height="169.66666666666669"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in </string>
                                         <color key="textColor" systemColor="labelColor"/>
@@ -130,16 +131,16 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="BBG-hp-IxV">
-                                        <rect key="frame" x="0.0" y="444.66666666666657" width="129.33333333333334" height="161.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="479.33333333333337" width="129.33333333333334" height="170"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вечер" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QH9-hv-knR">
-                                                <rect key="frame" x="0.0" y="0.0" width="75.333333333333329" height="161.33333333333334"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="75.333333333333329" height="170"/>
                                                 <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="32"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😍" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hNZ-hx-LKe">
-                                                <rect key="frame" x="85.333333333333329" y="0.0" width="43.999999999999986" height="161.33333333333334"/>
+                                                <rect key="frame" x="85.333333333333329" y="0.0" width="43.999999999999986" height="170"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="39"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -147,7 +148,7 @@
                                         </subviews>
                                     </stackView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ePX-Ji-bze">
-                                        <rect key="frame" x="0.0" y="556" width="390" height="161"/>
+                                        <rect key="frame" x="0.0" y="599.33333333333337" width="390" height="169.66666666666663"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla </string>
                                         <color key="textColor" systemColor="labelColor"/>
@@ -165,7 +166,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zaF-rO-vK4"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray4Color"/>
                         <constraints>
                             <constraint firstItem="ahD-sb-CUz" firstAttribute="leading" secondItem="zaF-rO-vK4" secondAttribute="leading" constant="20" id="AFn-JW-dIN"/>
                             <constraint firstItem="zaF-rO-vK4" firstAttribute="bottom" secondItem="ahD-sb-CUz" secondAttribute="bottom" constant="20" id="UOI-LC-sed"/>
@@ -173,7 +174,7 @@
                             <constraint firstItem="zaF-rO-vK4" firstAttribute="trailing" secondItem="ahD-sb-CUz" secondAttribute="trailing" constant="20" id="a22-Zp-tFT"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Итоги дня" id="cml-fd-DXb"/>
+                    <navigationItem key="navigationItem" id="cml-fd-DXb"/>
                     <connections>
                         <outletCollection property="thoughtsLabel" destination="RHX-og-EBb" collectionClass="NSMutableArray" id="aac-4m-kHF"/>
                         <outletCollection property="thoughtsLabel" destination="hFu-65-dba" collectionClass="NSMutableArray" id="CKQ-LT-6HW"/>
@@ -187,11 +188,11 @@
             </objects>
             <point key="canvasLocation" x="2528.3720930232557" y="-191.20171673819743"/>
         </scene>
-        <!--Result Tab Bar Controller-->
+        <!--Итоги дня-->
         <scene sceneID="3VF-RI-eK7">
             <objects>
                 <tabBarController id="OMc-OL-EOa" customClass="ResultTabBarController" customModule="MoodTracker" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="azq-6Y-ugb"/>
+                    <navigationItem key="navigationItem" title="Итоги дня" id="azq-6Y-ugb"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZYo-Dy-OGv">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -199,7 +200,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="tyQ-SR-Pwb" kind="relationship" relationship="viewControllers" id="qas-Rt-C79"/>
-                        <segue destination="53V-vO-cGW" kind="relationship" relationship="viewControllers" id="1cY-2g-u8I"/>
+                        <segue destination="nuJ-qD-D5Q" kind="relationship" relationship="viewControllers" id="Ypv-Bd-qNP"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q0K-Cd-pIn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -209,12 +210,15 @@
         <!--Navigation Controller-->
         <scene sceneID="Nyq-1n-gnd">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Og3-wg-b6i" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="ResultTabBarController" automaticallyAdjustsScrollViewInsets="NO" id="Og3-wg-b6i" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="d3v-cn-d3m">
-                        <rect key="frame" x="0.0" y="59" width="430" height="96"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="d3v-cn-d3m">
+                        <rect key="frame" x="0.0" y="59" width="430" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="40"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -233,6 +237,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -10,6 +10,17 @@ import UIKit
 class AdviceViewController: UITableViewController {
     
     private let advices = Advice.getAdvices()
+    
+    // MARK: - Override Methods
+    override func viewDidLoad() {
+        title = .none
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let adviceVC = segue.destination as? DetailedAdviceViewController else { return }
+        guard let indexPath = tableView.indexPathForSelectedRow else { return }
+        adviceVC.advice = advices[indexPath.row]
+    }
 
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -28,11 +39,6 @@ class AdviceViewController: UITableViewController {
         return cell
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let adviceVC = segue.destination as? DetailedAdviceViewController else { return }
-        guard let indexPath = tableView.indexPathForSelectedRow else { return }
-        adviceVC.advice = advices[indexPath.row]
-    }
     
     @IBAction func cancelButtonDidTapped() {
         dismiss(animated: true)
