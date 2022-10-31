@@ -7,7 +7,8 @@
 
 import UIKit
 
-class ThoughtsViewController: UIViewController {
+
+class ThoughtsViewController: UIViewController, UITextViewDelegate {
     
     // MARK: - IB Outlets
     @IBOutlet var reflectionTextViews: [UITextView]!
@@ -26,7 +27,7 @@ class ThoughtsViewController: UIViewController {
     // MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        reflectionTextViews.forEach { $0.delegate = self }
         reflectionTextViews.forEach { $0.layer.cornerRadius = 10 }
         saveButton.layer.cornerRadius = 10
     }
@@ -49,15 +50,37 @@ class ThoughtsViewController: UIViewController {
         doneButton.tintColor = .tintColor
         
         for index in 0..<thoughts.count {
-            thoughts[index].reflection = reflectionTextViews[index].text
+            //            thoughts[index].reflection = reflectionTextViews[index].text
+            if reflectionTextViews[index].text != "Ваши размышления..." {
+                thoughts[index].reflection = reflectionTextViews[index].text
+            } else {
+                thoughts[index].reflection = ""
+            }
             thoughts[index].isNegative = moodSwitches[index].isOn
         }
         
-        addDayThoughts(daysInfo: daysInfo)
+        addDayThoughts(to: daysInfo)
     }
     
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        reflectionTextViews.forEach { reflectionTextView in
+            if reflectionTextView == textView {
+                reflectionTextView.text = ""
+            }
+        }
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        reflectionTextViews.forEach { reflectionTextView in
+            if reflectionTextView == textView {
+                if reflectionTextView.text.isEmpty {
+                    reflectionTextView.text = "Ваши размышления..."
+                }
+            }
+        }
+    }
     // MARK: - Private Methods
-    private func addDayThoughts(daysInfo: [DayInfo]) {
+    private func addDayThoughts(to daysInfo: [DayInfo]) {
         self.daysInfo = daysInfo.map { dayInfo in
             var dayInfo = dayInfo
             if dayInfo.date == setDateFormat() {
