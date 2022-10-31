@@ -82,7 +82,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qLM-kq-adH"/>
-                        <color key="backgroundColor" systemColor="systemGray4Color"/>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="h9i-wG-Xtp" firstAttribute="leading" secondItem="qLM-kq-adH" secondAttribute="leading" constant="16" id="66q-rA-qtM"/>
                             <constraint firstItem="3qE-Oc-5xi" firstAttribute="top" secondItem="h9i-wG-Xtp" secondAttribute="bottom" constant="30" id="ChO-2y-id8"/>
@@ -145,8 +145,8 @@
     </scenes>
     <resources>
         <image name="morning" width="512" height="512"/>
-        <systemColor name="systemGray4Color">
-            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

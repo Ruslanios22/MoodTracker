@@ -5,26 +5,21 @@
 //  Created by Yuriy on 29.10.2022.
 //
 
-import AVKit
-import AVFoundation
+
 import UIKit
 
 class MeditationViewController: UIViewController {
     
-    @IBOutlet var videoView: UIView!
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        let randomIndex = Int.random(in: 1...4)
-        let player = AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "relax\(randomIndex)", ofType: "mp4")!))
-        
-        let layer = AVPlayerLayer(player: player)
-        layer.frame = videoView.bounds
-        videoView.layer.addSublayer(layer)
-        layer.videoGravity = .resizeAspectFill
-
-        player.play()
+    @IBOutlet var meditationLabel: UILabel!
+    
+    let meditationText = "1. Сядьте поудобнее или займите положение лежа. Такую практику можно осваивать даже стоя.\n2. Положение руки и пальцев зависит от каждой конкретной медитации, однако чаще всего соединяют подушечки указательного или безымянного пальцев с подушечкой большого пальца, располагая сами руки на коленях.\n3. Закройте глаза.\n4. Просто дышите, не пытаясь как-то управлять своим дыханием или регулировать его.\n5. Вдох и выдох должны осуществляться сами по себе, идти от природы.\n6. Не пытайтесь сконцентрировать на том, что вы думаете – пусть мысли текут свободно в вашей голове.\n7. Как только ваши мысли начинают \"прыгать\" или появляются такие мысли, которые \"перетягивают на себя одеяло внимания\", снова концентрируйтесь на дыхании.\n8. Медитируйте для начала по три минуты в день (не считая времени, которое необходимо для того, чтобы настроиться), постепенно увеличивая продолжительность медитации."
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        meditationLabel.text = meditationText
     }
+    
     
     @IBAction func cancelButtonDidTapped() {
         dismiss(animated: true)
