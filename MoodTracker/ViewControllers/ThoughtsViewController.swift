@@ -23,6 +23,7 @@ class ThoughtsViewController: UIViewController, UITextViewDelegate {
     
     // MARK: - Private Properties
     private var thoughts = Thought.getThoughts()
+    private var textViewDefaultText = "Ваши размышления..."
     
     // MARK: - Override Methods
     override func viewDidLoad() {
@@ -50,8 +51,7 @@ class ThoughtsViewController: UIViewController, UITextViewDelegate {
         doneButton.tintColor = .tintColor
         
         for index in 0..<thoughts.count {
-            //            thoughts[index].reflection = reflectionTextViews[index].text
-            if reflectionTextViews[index].text != "Ваши размышления..." {
+            if reflectionTextViews[index].text != textViewDefaultText {
                 thoughts[index].reflection = reflectionTextViews[index].text
             } else {
                 thoughts[index].reflection = ""
@@ -62,10 +62,12 @@ class ThoughtsViewController: UIViewController, UITextViewDelegate {
         addDayThoughts(to: daysInfo)
     }
     
+    // MARK: - UITextViewDelegate Methods
     func textViewDidBeginEditing(_ textView: UITextView) {
         reflectionTextViews.forEach { reflectionTextView in
-            if reflectionTextView == textView {
+            if reflectionTextView == textView && reflectionTextView.text == textViewDefaultText  {
                 reflectionTextView.text = ""
+                reflectionTextView.textColor = UIColor.black
             }
         }
     }
@@ -74,7 +76,8 @@ class ThoughtsViewController: UIViewController, UITextViewDelegate {
         reflectionTextViews.forEach { reflectionTextView in
             if reflectionTextView == textView {
                 if reflectionTextView.text.isEmpty {
-                    reflectionTextView.text = "Ваши размышления..."
+                    reflectionTextView.textColor = UIColor.opaqueSeparator
+                    reflectionTextView.text = textViewDefaultText
                 }
             }
         }
