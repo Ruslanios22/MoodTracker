@@ -23,6 +23,16 @@
 		E4DC1947290F42F8007FF662 /* DetailedResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DC1946290F42F8007FF662 /* DetailedResultViewController.swift */; };
 		E4DC194B290F4BB6007FF662 /* ResultTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DC194A290F4BB6007FF662 /* ResultTabBarController.swift */; };
 		E4DC194D290F4C81007FF662 /* ResultStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4DC194C290F4C81007FF662 /* ResultStoryboard.storyboard */; };
+		E4DC1950290F501A007FF662 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DC194F290F501A007FF662 /* CustomTableViewCell.swift */; };
+		E4DC1952290F506C007FF662 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DC1951290F506C007FF662 /* Extensions.swift */; };
+		E4DC1954290F5108007FF662 /* Advice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DC1953290F5108007FF662 /* Advice.swift */; };
+		E4DC1956290F511A007FF662 /* Humor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DC1955290F511A007FF662 /* Humor.swift */; };
+		E4DC1958290F51C6007FF662 /* AdviceStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4DC1957290F51C6007FF662 /* AdviceStoryboard.storyboard */; };
+		E4F079F2290F534000625637 /* AdviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F079F1290F534000625637 /* AdviceViewController.swift */; };
+		E4F079F4290F534C00625637 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F079F3290F534C00625637 /* CategoryViewController.swift */; };
+		E4F079F6290F536200625637 /* DetailedAdviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F079F5290F536200625637 /* DetailedAdviceViewController.swift */; };
+		E4F079F8290F537900625637 /* HumorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F079F7290F537900625637 /* HumorTableViewController.swift */; };
+		E4F079FA290F539400625637 /* MeditationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F079F9290F539400625637 /* MeditationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +54,16 @@
 		E4DC1946290F42F8007FF662 /* DetailedResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailedResultViewController.swift; sourceTree = "<group>"; };
 		E4DC194A290F4BB6007FF662 /* ResultTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultTabBarController.swift; sourceTree = "<group>"; };
 		E4DC194C290F4C81007FF662 /* ResultStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ResultStoryboard.storyboard; sourceTree = "<group>"; };
+		E4DC194F290F501A007FF662 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		E4DC1951290F506C007FF662 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E4DC1953290F5108007FF662 /* Advice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Advice.swift; sourceTree = "<group>"; };
+		E4DC1955290F511A007FF662 /* Humor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Humor.swift; sourceTree = "<group>"; };
+		E4DC1957290F51C6007FF662 /* AdviceStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AdviceStoryboard.storyboard; sourceTree = "<group>"; };
+		E4F079F1290F534000625637 /* AdviceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdviceViewController.swift; sourceTree = "<group>"; };
+		E4F079F3290F534C00625637 /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		E4F079F5290F536200625637 /* DetailedAdviceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailedAdviceViewController.swift; sourceTree = "<group>"; };
+		E4F079F7290F537900625637 /* HumorTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HumorTableViewController.swift; sourceTree = "<group>"; };
+		E4F079F9290F539400625637 /* MeditationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeditationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +96,7 @@
 		8E9BD5EA290F274B006E2266 /* MoodTracker */ = {
 			isa = PBXGroup;
 			children = (
+				E4DC194E290F4FE8007FF662 /* Views */,
 				E4DC192F290F2A9E007FF662 /* ViewControllers */,
 				E4DC1936290F3617007FF662 /* Models */,
 				E4DC1939290F3622007FF662 /* Services */,
@@ -104,6 +125,7 @@
 				E4DC193E290F3631007FF662 /* SetMoodStoryboard.storyboard */,
 				E4DC1942290F3EC2007FF662 /* ThoughtsStoryboard.storyboard */,
 				E4DC194C290F4C81007FF662 /* ResultStoryboard.storyboard */,
+				E4DC1957290F51C6007FF662 /* AdviceStoryboard.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -117,6 +139,11 @@
 				E4DC194A290F4BB6007FF662 /* ResultTabBarController.swift */,
 				E4DC1944290F42F1007FF662 /* ResultTableViewController.swift */,
 				E4DC1946290F42F8007FF662 /* DetailedResultViewController.swift */,
+				E4F079F3290F534C00625637 /* CategoryViewController.swift */,
+				E4F079F7290F537900625637 /* HumorTableViewController.swift */,
+				E4F079F1290F534000625637 /* AdviceViewController.swift */,
+				E4F079F5290F536200625637 /* DetailedAdviceViewController.swift */,
+				E4F079F9290F539400625637 /* MeditationViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -125,6 +152,8 @@
 			isa = PBXGroup;
 			children = (
 				E4DC193A290F3622007FF662 /* DayInfo.swift */,
+				E4DC1955290F511A007FF662 /* Humor.swift */,
+				E4DC1953290F5108007FF662 /* Advice.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -133,8 +162,17 @@
 			isa = PBXGroup;
 			children = (
 				E4DC1937290F3617007FF662 /* DataStore.swift */,
+				E4DC1951290F506C007FF662 /* Extensions.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		E4DC194E290F4FE8007FF662 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E4DC194F290F501A007FF662 /* CustomTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +233,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4DC1958290F51C6007FF662 /* AdviceStoryboard.storyboard in Resources */,
 				8E9BD5F8290F274B006E2266 /* LaunchScreen.storyboard in Resources */,
 				E4DC1943290F3EC2007FF662 /* ThoughtsStoryboard.storyboard in Resources */,
 				E4DC194D290F4C81007FF662 /* ResultStoryboard.storyboard in Resources */,
@@ -211,15 +250,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4F079F6290F536200625637 /* DetailedAdviceViewController.swift in Sources */,
 				E4DC1945290F42F1007FF662 /* ResultTableViewController.swift in Sources */,
 				E4DC1931290F2C14007FF662 /* MeetTeamViewController.swift in Sources */,
+				E4DC1950290F501A007FF662 /* CustomTableViewCell.swift in Sources */,
 				E4DC1938290F3617007FF662 /* DataStore.swift in Sources */,
+				E4F079F4290F534C00625637 /* CategoryViewController.swift in Sources */,
+				E4F079FA290F539400625637 /* MeditationViewController.swift in Sources */,
 				E4DC193D290F362B007FF662 /* SetMoodViewController.swift in Sources */,
+				E4F079F8290F537900625637 /* HumorTableViewController.swift in Sources */,
+				E4DC1956290F511A007FF662 /* Humor.swift in Sources */,
 				E4DC1941290F3EB9007FF662 /* ThoughtsViewController.swift in Sources */,
 				8E9BD5EC290F274B006E2266 /* AppDelegate.swift in Sources */,
+				E4DC1954290F5108007FF662 /* Advice.swift in Sources */,
+				E4DC1952290F506C007FF662 /* Extensions.swift in Sources */,
 				E4DC194B290F4BB6007FF662 /* ResultTabBarController.swift in Sources */,
 				E4DC1947290F42F8007FF662 /* DetailedResultViewController.swift in Sources */,
 				E4DC193B290F3622007FF662 /* DayInfo.swift in Sources */,
+				E4F079F2290F534000625637 /* AdviceViewController.swift in Sources */,
 				8E9BD5EE290F274B006E2266 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
