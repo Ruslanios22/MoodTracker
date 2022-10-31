@@ -52,8 +52,9 @@ class SetMoodViewController: UIViewController {
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        guard let thoughtsVC = segue.destination as? ThoughtsViewController else { return }
-//        thoughtsVC.daysInfo = daysInfo
+        guard let thoughtsNC = segue.destination as? UINavigationController else { return }
+        guard let thoughtsVC = thoughtsNC.topViewController as? ThoughtsViewController else { return }
+        thoughtsVC.daysInfo = daysInfo
     }
     
     // MARK: - IB Actions

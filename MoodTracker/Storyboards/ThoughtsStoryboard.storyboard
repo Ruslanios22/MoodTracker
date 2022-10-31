@@ -166,7 +166,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Готово" style="done" id="BgP-PN-1mf">
                             <color key="tintColor" systemColor="opaqueSeparatorColor"/>
                             <connections>
-                                <segue destination="GOL-80-2Q9" kind="presentation" modalPresentationStyle="fullScreen" id="zfB-Ms-woK"/>
+                                <segue destination="f4Z-eO-aEr" kind="presentation" modalPresentationStyle="fullScreen" id="SF1-iC-BMO"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -185,13 +185,13 @@
             </objects>
             <point key="canvasLocation" x="912.2137404580152" y="54.225352112676056"/>
         </scene>
-        <!--ResultTableViewController-->
-        <scene sceneID="ENJ-jS-2FQ">
+        <!--ResultTabBarController-->
+        <scene sceneID="saD-gx-qqy">
             <objects>
-                <viewControllerPlaceholder storyboardName="ResultStoryboard" referencedIdentifier="ResultTableViewController" id="GOL-80-2Q9" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Nro-kc-9NE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="ResultStoryboard" referencedIdentifier="ResultTabBarController" id="f4Z-eO-aEr" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eKH-Gj-5fx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1546" y="54"/>
+            <point key="canvasLocation" x="1596" y="54"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="PBE-il-Ho5">

@@ -21,7 +21,8 @@
 		E4DC1943290F3EC2007FF662 /* ThoughtsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4DC1942290F3EC2007FF662 /* ThoughtsStoryboard.storyboard */; };
 		E4DC1945290F42F1007FF662 /* ResultTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DC1944290F42F1007FF662 /* ResultTableViewController.swift */; };
 		E4DC1947290F42F8007FF662 /* DetailedResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DC1946290F42F8007FF662 /* DetailedResultViewController.swift */; };
-		E4DC1949290F4309007FF662 /* ResultStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4DC1948290F4309007FF662 /* ResultStoryboard.storyboard */; };
+		E4DC194B290F4BB6007FF662 /* ResultTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DC194A290F4BB6007FF662 /* ResultTabBarController.swift */; };
+		E4DC194D290F4C81007FF662 /* ResultStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4DC194C290F4C81007FF662 /* ResultStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +42,8 @@
 		E4DC1942290F3EC2007FF662 /* ThoughtsStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ThoughtsStoryboard.storyboard; sourceTree = "<group>"; };
 		E4DC1944290F42F1007FF662 /* ResultTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultTableViewController.swift; sourceTree = "<group>"; };
 		E4DC1946290F42F8007FF662 /* DetailedResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailedResultViewController.swift; sourceTree = "<group>"; };
-		E4DC1948290F4309007FF662 /* ResultStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ResultStoryboard.storyboard; sourceTree = "<group>"; };
+		E4DC194A290F4BB6007FF662 /* ResultTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultTabBarController.swift; sourceTree = "<group>"; };
+		E4DC194C290F4C81007FF662 /* ResultStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ResultStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +103,7 @@
 				8E9BD5F1290F274B006E2266 /* Main.storyboard */,
 				E4DC193E290F3631007FF662 /* SetMoodStoryboard.storyboard */,
 				E4DC1942290F3EC2007FF662 /* ThoughtsStoryboard.storyboard */,
-				E4DC1948290F4309007FF662 /* ResultStoryboard.storyboard */,
+				E4DC194C290F4C81007FF662 /* ResultStoryboard.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -112,6 +114,7 @@
 				E4DC1930290F2C14007FF662 /* MeetTeamViewController.swift */,
 				E4DC193C290F362A007FF662 /* SetMoodViewController.swift */,
 				E4DC1940290F3EB9007FF662 /* ThoughtsViewController.swift */,
+				E4DC194A290F4BB6007FF662 /* ResultTabBarController.swift */,
 				E4DC1944290F42F1007FF662 /* ResultTableViewController.swift */,
 				E4DC1946290F42F8007FF662 /* DetailedResultViewController.swift */,
 			);
@@ -194,7 +197,7 @@
 			files = (
 				8E9BD5F8290F274B006E2266 /* LaunchScreen.storyboard in Resources */,
 				E4DC1943290F3EC2007FF662 /* ThoughtsStoryboard.storyboard in Resources */,
-				E4DC1949290F4309007FF662 /* ResultStoryboard.storyboard in Resources */,
+				E4DC194D290F4C81007FF662 /* ResultStoryboard.storyboard in Resources */,
 				8E9BD5F5290F274B006E2266 /* Assets.xcassets in Resources */,
 				8E9BD5F3290F274B006E2266 /* Main.storyboard in Resources */,
 				E4DC193F290F3631007FF662 /* SetMoodStoryboard.storyboard in Resources */,
@@ -214,6 +217,7 @@
 				E4DC193D290F362B007FF662 /* SetMoodViewController.swift in Sources */,
 				E4DC1941290F3EB9007FF662 /* ThoughtsViewController.swift in Sources */,
 				8E9BD5EC290F274B006E2266 /* AppDelegate.swift in Sources */,
+				E4DC194B290F4BB6007FF662 /* ResultTabBarController.swift in Sources */,
 				E4DC1947290F42F8007FF662 /* DetailedResultViewController.swift in Sources */,
 				E4DC193B290F3622007FF662 /* DayInfo.swift in Sources */,
 				8E9BD5EE290F274B006E2266 /* SceneDelegate.swift in Sources */,

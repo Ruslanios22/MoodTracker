@@ -9,7 +9,7 @@ import UIKit
 
 class ResultTableViewController: UITableViewController {
     
-    private var days = DayInfo.getDayInfo()
+    var days: [DayInfo]!
     
     // MARK: - Override Methods
     override func viewDidLoad() {

@@ -38,8 +38,9 @@ class ThoughtsViewController: UIViewController {
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        guard let testVC = segue.destination as? TestViewController else { return }
-//        testVC.daysInfo = daysInfo
+        guard let resultNC = segue.destination as? UINavigationController else { return }
+        guard let resultTBC = resultNC.topViewController as? ResultTabBarController else { return }
+        resultTBC.daysInfo = daysInfo
     }
     
     // MARK: - IB Actions
